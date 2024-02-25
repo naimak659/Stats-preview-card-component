@@ -1,33 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Stats preview card component</title>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </head>
+  <body>
+    <!-- card -->
+    <main class="card">
+      <!-- card's picture -->
+      <div class="card__picture">
+        <picture>
+          <img
+            class="card__img"
+            src="./images/image-header-mobile.jpg"
+            alt="image-header-mobile.jpg"
+          />
+        </picture>
+      </div>
+      <!-- card's content -->
+      <div class="card__content">
+        
+        <div class="Card__head">
+          <!-- using flex -->
+          <h2 class="cardHead__title">
+            Get insights that help your business grow.
+          </h2>
+          <h5 class="cardHead__details">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </h5>
+        </div>
+        <div class="card__achivment">
+          <!-- Using grid -->
+          <div>
+            <h3 class="card__num">10k+</h3>
+            <h6 class="card__DataBridge">COMPANIES</h6>
+          </div>
+          <div>
+            <h3 class="card__num">314</h3>
+            <h6 class="card__DataBridge">TEMPLATES</h6>
+          </div>
+          <div>
+            <h3 class="card__num">12M+</h3>
+            <h6 class="card__DataBridge">QUERIES</h6>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
