@@ -1,1 +1,151 @@
+/* ==================common css start==================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+div,
+span,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
 
+/* ==================common css END==================*/
+
+/* ==================Root Start=================*/
+
+:root {
+  /* Primary color */
+  --primary-darkBlue: hsl(233, 47%, 7%);
+  --primary-desaturatedBlue: hsl(244, 38%, 16%);
+  --primary-softViolet: hsl(244, 38%, 16%);
+
+  /* Neutral color */
+  --Natural-white: hsl(0, 0%, 100%);
+  --Natural-main-hite: hsla(0, 0%, 100%, 0.75);
+  --Natural-stat-hite: hsla(0, 0%, 100%, 0.6);
+
+  /* Font Family, Size & Weight */
+  --inter: "Inter", sans-serif;
+  --LexendDeca: "Lexend Deca", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
+}
+
+/* ==================Root END==================*/
+/* ==================body==================*/
+
+.container {
+  /* max-width: 375px; */
+  height: 100vh;
+  padding: 80px 20px 0;
+  background: var(--primary-darkBlue);
+}
+/* ==================body==================*/
+
+/* =================card===================*/
+
+.card {
+  background: var(--primary-desaturatedBlue);
+  max-width: 87.2vw;
+  border-radius: 6px;
+  margin: 0 auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+/* =================card picture===================*/
+.card__picture {
+  position: relative;
+}
+.card__picture::after {
+  position: absolute;
+  content: "";
+  top: 0px;
+  left: 0px;
+  width: 87.2vw;
+  height: 100%;
+  height: 100%;
+  background: #520e86;
+  opacity: 0.5;
+}
+.card__img {
+  max-width: 87.2vw;
+  height: auto;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+@media (min-width: 640px) {
+  .card{
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+}
+/* =================card picture===================*/
+/* =================card head===================*/
+.card__content {
+  padding: 42px 2rem;
+  text-align: center;
+  display: grid;
+}
+
+.cardHead__title {
+  color: var(--Natural-white);
+  font-family: var(--LexendDeca);
+  font-size: 1.5rem;
+}
+.cardHead--title {
+  color: #a556d5;
+  font-weight: var(--fw-700);
+}
+.cardHead__details {
+  color: var(--Natural-main-hite);
+  font-family: var(--inter);
+  font-weight: var(--fw-400);
+  font-size: 15px;
+  padding: 23px 0 37px;
+}
+.card__num {
+  color: var(--Natural-white);
+  font-weight: var(--fw-700);
+  font-family: var(--inter);
+}
+.card__DataBridge {
+  color: var(--Natural-stat-hite);
+  font-family: var(--LexendDeca);
+  font-size: 12px;
+  font-weight: var(--fw-400);
+}
+
+/* =================card head===================*/
+
+/* =================card===================*/

@@ -14,35 +14,37 @@
     <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Stats preview card component</title>
-
   </head>
   <body>
-    <!-- card -->
-    <main class="card">
-      <!-- card's picture -->
-      <div class="card__picture">
-        <picture>
-          <img
-            class="card__img"
-            src="./images/image-header-mobile.jpg"
-            alt="image-header-mobile.jpg"
-          />
-        </picture>
-      </div>
-      <!-- card's content -->
-      <div class="card__content">
-        
-        <div class="Card__head">
-          <!-- using flex -->
-          <h2 class="cardHead__title">
-            Get insights that help your business grow.
-          </h2>
-          <h5 class="cardHead__details">
-            Discover the benefits of data analytics and make better decisions
-            regarding revenue, customer experience, and overall efficiency.
-          </h5>
+    <main class="container">
+      <!-- card -->
+      <div class="card">
+        <!-- card's picture -->
+        <div class="card__picture">
+          <picture>
+            <img
+              class="card__img"
+              src="./images/image-header-mobile.jpg"
+              alt="image-header-mobile.jpg"
+            />
+          </picture>
         </div>
-        <div class="card__achivment">
+        <!-- card's content -->
+        <div class="card__content">
+          <div class="Card__head">
+            <!-- using flex -->
+            <h2 class="cardHead__title">
+              Get <span class="cardHead--title">insights</span> that help your
+              business grow.
+            </h2>
+          </div>
+          <div>
+            <h5 class="cardHead__details">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </h5>
+          </div>
+          <!-- <div class="card__achivment"> -->
           <!-- Using grid -->
           <div>
             <h3 class="card__num">10k+</h3>
@@ -56,6 +58,7 @@
             <h3 class="card__num">12M+</h3>
             <h6 class="card__DataBridge">QUERIES</h6>
           </div>
+          <!-- </div> -->
         </div>
       </div>
     </main>
