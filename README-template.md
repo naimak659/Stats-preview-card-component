@@ -28,15 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./design/desktop-preview.png)
+![](./design/mobile-preview.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
@@ -52,59 +46,83 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-### What I learned
+### What I Learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+During the development of this project, I gained valuable insights and learned several important concepts. Here are some of the key learnings:
 
-To see how you can add code snippets, see below:
+#### Making the Project Responsive
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I learned how to make my project responsive to different screen sizes. One technique I used was using the `clamp()` function for font sizes, which allowed text to scale smoothly across various viewport widths:
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+font-size: clamp(1.5rem, 1.3241rem + 0.7505vw, 2rem);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+#### Viewport width
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+Additionally, I discovered the vw (viewport width) unit, which I used to ensure that elements adapt dynamically to different screen sizes:
 
-### Continued development
+```css
+/* Example usage of vw unit */
+.example-element {
+  width: 50vw;
+}
+```
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+#### Using Border Radius for Responsive Design
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I also learned how to use border radius properties to create responsive designs. By adjusting the border radius based on viewport size, I achieved more flexible and visually appealing layouts:
 
-### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+```css
+/* Example usage of border radius for responsiveness */
+.example-element {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+```
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
+### Continued Development
+
+As I continue my journey in web development, there are several areas I plan to focus on and improve in future projects:
+
+1. **Advanced Responsive Design**: While I've gained a basic understanding of responsive design principles, I want to delve deeper into advanced techniques such as using media queries, flexbox, and CSS grid to create more complex and flexible layouts that adapt seamlessly to various screen sizes and devices.
+
+2. **Accessibility**: Ensuring that my projects are accessible to users with disabilities is an important aspect of web development that I aim to prioritize. I plan to learn more about accessibility standards, techniques for improving accessibility, and how to incorporate accessibility best practices into my projects from the outset.
+
+3. **JavaScript Mastery**: Although I have a solid foundation in JavaScript, there's always room for improvement. I want to deepen my knowledge of JavaScript by exploring advanced topics such as asynchronous programming, ES6 features, functional programming, and modern JavaScript frameworks/libraries like React, Vue.js, or Angular.
+
+4. **Performance Optimization**: Optimizing the performance of my websites and web applications is crucial for delivering a fast and seamless user experience. I intend to learn more about techniques for optimizing loading times, reducing page size, minimizing render-blocking resources, and improving overall site performance through efficient code, caching strategies, and CDN utilization.
+
+5. **Version Control with Git**: While I've been using Git for version control, I want to enhance my understanding of Git workflows, branching strategies, and collaboration techniques. I plan to explore more advanced Git features and practices to streamline my development process and work more effectively with collaborators on projects.
+
+By focusing on these areas of development, I aim to continuously improve my skills and build more robust, accessible, and high-performing web projects in the future.
+
+
+### Useful Resources
+
+- [Font Size Clamp Generator](https://clamp.font-size.app/) - This online tool helped me generate font size values using the `clamp()` function, allowing for responsive typography in my project. It simplified the process of calculating font sizes based on minimum and maximum values and viewport width.
+
+- [PX to VW Converter Chrome Extension](https://chromewebstore.google.com/detail/px-to-vw/giddpkhnoflfjlopldfoblpjieknlnoh?hl=en-US&utm_source=ext_sidebar) - This Chrome extension proved to be a valuable resource for converting pixel values to viewport width units (vw) directly within the browser. It facilitated the implementation of responsive designs by providing a quick and convenient way to adapt element sizes based on viewport width.
+
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Stats-preview-card-component](https://www.your-site.com)
+- Frontend Mentor - [@naimak659](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@naimak659](https://twitter.com/naimak659)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would like to extend my heartfelt thanks to Frontend Mentor for creating challenges like this. These projects provide invaluable opportunities for new web developers like me to gain practical experience and improve our skills. The structured challenges and real-world scenarios presented by Frontend Mentor have been instrumental in my learning journey, and I'm grateful for the platform's contribution to my growth as a developer.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+A special tip for beginners: Always remember to read documentation thoroughly, whether it's for frameworks like Tailwind CSS, Bootstrap, React, or any other tool you're using. Documentation provides essential guidance and insights that can greatly enhance your understanding and proficiency. Additionally, consistent practice is key to mastering your craft and achieving excellence.
+
+
+
+
