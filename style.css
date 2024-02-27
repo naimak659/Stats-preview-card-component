@@ -63,10 +63,12 @@ body {
 /* ==================body==================*/
 
 .container {
-  /* max-width: 375px; */
-  height: 100vh;
-  padding: 80px 20px 0;
+  
+  min-height: 100vh;
+  padding: 80px 20px 80px;
   background: var(--primary-darkBlue);
+  display: grid;
+  place-items: center;
 }
 /* ==================body==================*/
 
@@ -114,7 +116,8 @@ body {
 .cardHead__title {
   color: var(--Natural-white);
   font-family: var(--LexendDeca);
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+  font-size: clamp(1.5rem, 1.3241rem + 0.7505vw, 2rem);
 }
 .cardHead--title {
   color: #a556d5;
@@ -127,10 +130,15 @@ body {
   font-size: 15px;
   padding: 23px 0 37px;
 }
+.cardAchivment{
+  padding: 16px;
+
+}
 .card__num {
   color: var(--Natural-white);
   font-weight: var(--fw-700);
   font-family: var(--inter);
+  padding-bottom: 8px;
 }
 .card__DataBridge {
   color: var(--Natural-stat-hite);
@@ -143,12 +151,17 @@ body {
 
 /* =================card===================*/
 @media (min-width: 750px) {
+  .container{
+
+  }
   .card {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 77.014vw;
+    min-width: 77.014vw;
+
+    max-width: none;
     padding: 1rem 2rem 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .card__img {
@@ -163,25 +176,36 @@ body {
     text-align: inherit;
     max-width: 570px;
   }
+  .cardHead__title{
+    /* font-size: 2rem; */
+    
+  }
   .card__achivment {
     display: grid;
-    text-align: center;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
     column-gap: 8px;
   }
 }
 @media (min-width: 1350px) {
   .card {
     padding: 0;
-    width: 1109px;
+    min-width: 1109px;
+    max-width: none;
+    /* min-width: none; */
   }
   .card__img {
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    max-width: 541px;
+    width: 541px;
+    height: 446px;
+  }
+  .card__content {
+    margin: 0 auto;
+  }
+  .Card__head {
+    width: 375px;
   }
   .card__picture::after {
-    max-width: 541px;
+    width: 541px;
   }
 }
