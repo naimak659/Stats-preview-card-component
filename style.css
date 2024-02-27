@@ -99,17 +99,10 @@ body {
 }
 .card__img {
   max-width: 87.2vw;
-  height: auto;
-  border-top-right-radius: 6px;
   border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
-@media (min-width: 640px) {
-  .card{
-    display: flex;
-    flex-direction: row-reverse;
 
-  }
-}
 /* =================card picture===================*/
 /* =================card head===================*/
 .card__content {
@@ -149,3 +142,46 @@ body {
 /* =================card head===================*/
 
 /* =================card===================*/
+@media (min-width: 750px) {
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 77.014vw;
+    padding: 1rem 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__img {
+    max-width: 37.569vw;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  .card__picture::after {
+    max-width: 37.569vw;
+  }
+  .card__content {
+    text-align: inherit;
+    max-width: 570px;
+  }
+  .card__achivment {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    column-gap: 8px;
+  }
+}
+@media (min-width: 1350px) {
+  .card {
+    padding: 0;
+    width: 1109px;
+  }
+  .card__img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    max-width: 541px;
+  }
+  .card__picture::after {
+    max-width: 541px;
+  }
+}
